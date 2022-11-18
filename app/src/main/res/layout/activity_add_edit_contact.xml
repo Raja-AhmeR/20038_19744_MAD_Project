@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    tools:context=".AddEditContact"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_10sdp" >
+
+<!--        Circle Image for Profile-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_gravity="center"
+            app:civ_border_width="@dimen/_1sdp"
+            app:civ_border_color="@color/colorTextPrimary"/>
+
+        <!-- EditText for Name input-->
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/white"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/background_input_field"
+            android:paddingTop="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableStart="@drawable/ic_baseline_text_fields_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/colorTextSecondary"
+            />
+        <!-- EditText for Phone Number input-->
+        <EditText
+            android:id="@+id/phoneEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone No"
+            android:inputType="phone"
+            android:textColorHint="@color/white"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/background_input_field"
+            android:paddingTop="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableStart="@drawable/ic_baseline_phone_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/colorTextSecondary"
+            />
+
+        <!-- EditText for Email input-->
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/white"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/background_input_field"
+            android:paddingTop="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/colorTextSecondary"
+            />
+
+        <!-- EditText for Note input-->
+        <EditText
+            android:id="@+id/noteEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Details"
+            android:inputType="textLongMessage"
+            android:textColorHint="@color/white"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/background_input_field"
+            android:paddingTop="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableStart="@drawable/ic_baseline_note_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/colorTextSecondary"
+            />
+
+    </LinearLayout>
+
+
+<!--    fab Button to Add Data into Database-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:backgroundTint="@color/colorTextPrimary"
+        android:contentDescription="TODO"
+        android:elevation="@dimen/_5sdp"
+        android:src="@drawable/ic_baseline_add_24"
+        android:tint="@color/white"
+        app:pressedTranslationZ="@dimen/_10sdp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>
